@@ -1,0 +1,14 @@
+$font-size: 16px;
+$yellow: #F1C67D;
+$blue: #98BFE9;
+$black: #262626;
+$white: #fff;
+
+@mixin font($weight) {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: $weight;
+}
+
+@mixin border-radius($radius) {
+	border-radius: $radius;
+}
