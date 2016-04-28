@@ -381,6 +381,10 @@ h1 {
   padding: 30px;
 }
 
+.more-link {
+  display: none;
+}
+
 .cat-news {
   padding: 10px 0;
   padding-left: 0;
@@ -393,10 +397,6 @@ h1 {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 400;
   color: #383838;
-}
-
-.cat-news .more-link {
-  display: none;
 }
 
 .cat-news img {
@@ -526,6 +526,43 @@ blockquote p {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 400;
   color: #383838;
+}
+
+.section-uslugi .uslugi-content {
+  border-bottom: 3px solid rgba(255, 255, 255, 0);
+  transition: all ease-in-out .2s;
+  border-radius: 3px;
+}
+
+.section-uslugi .uslugi-content:hover {
+  border-bottom: 3px solid #262626;
+  transition: all ease-in-out .2s;
+  box-shadow: 1px 1px 5px rgba(38, 38, 38, 0.5);
+  background: #fff;
+}
+
+.section-uslugi .uslugi-content a {
+  text-transform: uppercase;
+  color: #262626;
+  padding: 5px 10px;
+  border-bottom: 2px solid rgba(241, 198, 125, 0);
+  border-radius: 8px;
+  border-bottom: 2px solid #262626;
+}
+
+.section-uslugi .uslugi-content a:hover {
+  background: #F1C67D;
+  text-decoration: none;
+}
+
+.section-uslugi .uslugi-content img {
+  width: 50%;
+  height: auto;
+  text-align: center;
+}
+
+.section-uslugi .container:first-child {
+  padding: 30px 0;
 }
 
 /*# sourceMappingURL=main.css.map */
