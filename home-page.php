@@ -62,14 +62,9 @@ Template Name: Главная
 			</div>
 			<div class="col-lg-4 col-lg-offset-4 colums">
 				<h3>Связаться с нами</h3>
-				<div>
-					<form action="#">
-						<input type="text" placeholder="Ваше имя">
-						<input type="text" placeholder="Номер телефона">
-						<textarea name="" id="" rows="3" placeholder="Сообщение"></textarea>
-						<input type="submit">
-					</form>
-				</div>
+				<div class="form description">
+					<?php dynamic_sidebar('form'); ?>
+				</div>	
 			</div>
 		</div>
 	</div>

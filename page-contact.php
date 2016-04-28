@@ -10,14 +10,17 @@ Template Name: контакты
 </div>
 <?php endwhile; endif; wp_reset_query(); ?>
 
-	<div class="row">
-		<div class="container description">
-			<div class="">
-				<div class="col-lg-12">
-					<?php if (have_posts()): while (have_posts()): the_post(); ?>
-					<?php the_content(); ?>
-					<?php endwhile; endif; ?></div>
-				<div class="clearfix"></div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-7 description">
+				<?php if (have_posts()): while (have_posts()): the_post(); ?>
+				<?php the_content(); ?>
+				<?php endwhile; endif; ?>
+			</div>
+			<div class="col-md-4 col-md-offset-1">
+				<div class="form description">
+					<?php dynamic_sidebar('form'); ?>
+				</div>				
 			</div>
 		</div>
 	</div>

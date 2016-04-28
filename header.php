@@ -23,23 +23,23 @@
 									echo $thumb_url[0];
 								?>) center; background-size: cover;">
 		<div class="container header-block">
-			<div class="col-lg-4">
+			<div class="col-md-4">
 				<a class="logo" href="/" title="<?php echo get_bloginfo('name'); ?>">
 					<img src="<?php echo get_template_directory_uri(); ?>/app/img/icon1.png" alt="<?php echo get_bloginfo('name'); ?>">
 				</a>
 				<span class="company-name"><?php echo get_bloginfo('name'); ?></span>
 			</div>
-			<div class="col-lg-8">
+			<div class="col-md-8">
 				<div class="row header-right">
-					<div class="col-lg-3 col-lg-offset-6">
+					<div class="col-md-3 col-md-offset-6">
 						<a class="call-me" href="#"><?php dynamic_sidebar('callme'); ?></a>
 					</div>
-					<div class="col-lg-3 phone">
+					<div class="col-md-3 phone">
 						<?php dynamic_sidebar('tel'); ?>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-lg-12 top-menu">
+					<div class="col-md-12 top-menu">
 						<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
 					</div>
 				</div>

@@ -554,3 +554,42 @@ blockquote {
 .map {
 	box-shadow: 0 0 5px transparentize($black, .5);
 }
+
+.page-template-page-contact {
+	background-color: #98BFE9;
+	background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSczMDAnIGhlaWdodD0nMzAwJyB2aWV3Qm94PScwIDAgMTUwIDE1MCc+Cgk8ZmlsdGVyIGlkPSduJyB4PScwJyB5PScwJz4KCQk8ZmVUdXJidWxlbmNlIHR5cGU9J3R1cmJ1bGVuY2UnIGJhc2VGcmVxdWVuY3k9Jy43JyByZXN1bHQ9J2Z1enonIG51bU9jdGF2ZXM9JzInIHN0aXRjaFRpbGVzPSdzdGl0Y2gnLz4KCQk8ZmVDb21wb3NpdGUgaW49J1NvdXJjZUdyYXBoaWMnIGluMj0nZnV6eicgb3BlcmF0b3I9J2FyaXRobWV0aWMnIGsxPScwJyBrMj0nMS4zJyBrMz0nLTAuODgnIGs0PScuMDEnIC8+Cgk8L2ZpbHRlcj4KCTxyZWN0IHdpZHRoPScxMDIlJyBoZWlnaHQ9JzEwMiUnIGZpbGw9JyNmZmYnLz4KCTxyZWN0IHg9Jy0xJScgeT0nLTElJyB3aWR0aD0nMTAyJScgaGVpZ2h0PScxMDIlJyBmaWxsPScjOThCRkU5JyBmaWx0ZXI9J3VybCgjbiknIG9wYWNpdHk9JzEnLz4KPC9zdmc+);
+
+	.description {
+		background: $white;
+		padding: 30px;
+		@include border-radius(3px);
+		box-shadow: 1px 1px 3px transparentize($black, .7);
+	}
+
+	p {
+		text-indent: 30px;
+		font-size: $font-size + 1px;
+		@include font(400);
+		color: lighten($black, 7%);
+	}
+}
+
+.form p {
+	text-indent: 0;
+}
+
+.form {
+	input, textarea {
+			width: 100%;
+			margin-bottom: 10px;
+			padding: 10px;
+		}
+
+		textarea {
+			height: 70px;
+		}
+
+		submit {
+			background: #d22
+		}
+}
