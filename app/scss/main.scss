@@ -1,8 +1,8 @@
 @import "_var.scss";
 
 ::selection {
-    background: $yellow;
-    color: darken($black, 50%);
+    background: darken($black, 50%);
+    color: $white;
 }
 
 div, span, a, li, h1, h2, h3, h4, h5, h6, table, a:hover, p {
@@ -304,7 +304,6 @@ h1 {
 	padding: 30px 0;
 	box-shadow: 0 0 5px $black;
 	z-index: 9;
-	margin-top: 10px;
 
 	li {
 		list-style: none;
@@ -540,8 +539,6 @@ blockquote {
 			}
 		}
 
-
-
 		img {
 			width: 50%;
 			height: auto;
@@ -552,4 +549,8 @@ blockquote {
 	.container:first-child {
 		padding: 30px 0;
 	}
+}
+
+.map {
+	box-shadow: 0 0 5px transparentize($black, .5);
 }

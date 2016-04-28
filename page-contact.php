@@ -21,4 +21,7 @@ Template Name: контакты
 			</div>
 		</div>
 	</div>
+	<div class="row map">
+		<?php dynamic_sidebar('maps'); ?>
+	</div>
 <?php get_footer(); ?>
