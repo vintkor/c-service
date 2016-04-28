@@ -1,31 +1,27 @@
 <div class="row footer">
 		<div class="container">
-			<div class="col-lg-4 footer-left">
+			<div class="col-md-4 footer-left">
 				<h4>Разделы сайта</h4>				
 				<?php wp_nav_menu( array( 'theme_location' => 'sub-menu' ) ); ?>
 			</div>
-			<div class="col-lg-4 footer-center">
+			<div class="col-md-4 footer-center">
 				<h4>Наши услуги</h4>
 					<?php wp_nav_menu( array( 'theme_location' => 'sub2-menu' ) ); ?>
 			</div>
-			<div class="col-lg-4 footer-right">
+			<div class="col-md-4 footer-right">
 				<ul>
-					<h4>Наши контакты</h4>
-					<li><a href="#">Пурнк меню</a></li>
-					<li><a href="#">Пурнк меню</a></li>
-					<li><a href="#">Пурнк меню</a></li>
-					<li><a href="#">Пурнк меню</a></li>
-					<li><a href="#">Пурнк меню</a></li>
-				</ul>
+					<h4>Наши контакты</h4>					
+						<?php dynamic_sidebar('footer'); ?>
+					</div>
 			</div>
 		</div>
 	</div>
 	<div class="row copyright">
 		<div class="container">
-			<div class="col-lg-6">
+			<div class="col-md-6">
 				<?php echo get_bloginfo('name'); ?> &#169; 2010 - <?php echo date('Y'); ?>
 			</div>
-			<div class="col-lg-6">
+			<div class="col-md-6">
 				<a href="#">Создание сайта</a>
 			</div>
 		</div>

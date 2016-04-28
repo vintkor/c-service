@@ -7,7 +7,7 @@
 	<div class="row">
 		<div class="container description">
 			<div class="">
-				<div class="col-lg-12">								
+				<div class="col-md-12">								
 					<?php the_content(); ?>					
 				<div class="clearfix"></div>
 			</div>
@@ -21,8 +21,8 @@
 	<div class="row cat-news">
 		<div class="container">			
 			<div class="news-wrapper">
-				<div class="col-lg-3 col-md-3 col-sm-4"><?php the_post_thumbnail(); ?></div>
-				<div class="col-lg-9 col-md-9 col-sm-8">
+				<div class="col-md-3 col-md-3 col-sm-4"><?php the_post_thumbnail(); ?></div>
+				<div class="col-md-9 col-md-9 col-sm-8">
 					<h3><?php the_title(); ?></h3>
 					<div><?php the_content(); ?></div>
 				</div>

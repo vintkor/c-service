@@ -48,12 +48,24 @@ function form_widget_init() {
 	) );
 }
 
+function footer_widget_init() {
+	register_sidebar( array(
+		'name'          => 'Контакты в футере справа',
+		'id'            => 'footer',
+		'before_widget' => '',
+		'after_widget'  => '',
+		'before_title'  => '<span class="hidden">',
+		'after_title'   => '</span>',
+	) );
+}
+
 add_action('init', 'register_nav_menus_on_init');
 
 add_action( 'widgets_init', 'tel_widget_init' );
 add_action( 'widgets_init', 'callme_widget_init' );
 add_action( 'widgets_init', 'google_map_widget_init' );
 add_action( 'widgets_init', 'form_widget_init' );
+add_action( 'widgets_init', 'footer_widget_init' );
 
 function custom_disable_embeds_init() {
 

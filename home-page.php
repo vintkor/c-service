@@ -32,7 +32,7 @@ Template Name: Главная
 		<div class="container">
 			<?php $idObj = get_category_by_slug('section2'); 	$id = $idObj->term_id;?>
 			<?php if ( have_posts() ) : query_posts('cat=' . $id); while (have_posts()) : the_post(); ?>
-			<div class="col-lg-3 colums-height">
+			<div class="col-md-3 colums-height">
 				<div class="sec1Thumb"><?php the_post_thumbnail(); ?></div>				
 				<h3 class="sec1Title"><?php the_title(); ?></h3>
 				<div class="colums-p">
@@ -52,7 +52,7 @@ Template Name: Главная
 								?>) center; background-size: cover;">
 <? endwhile; endif; wp_reset_query(); ?>		
 		<div class="container">
-			<div class="col-lg-4 colums">
+			<div class="col-md-4 colums">
 				<h3><?php the_title(); ?></h3>
 				<div>
 					<?php if (have_posts()): while (have_posts()): the_post(); ?>
@@ -60,7 +60,7 @@ Template Name: Главная
 					<?php endwhile; endif;?>
 				</div>
 			</div>
-			<div class="col-lg-4 col-lg-offset-4 colums">
+			<div class="col-md-4 col-md-offset-4 colums">
 				<h3>Связаться с нами</h3>
 				<div class="form description">
 					<?php dynamic_sidebar('form'); ?>
@@ -80,7 +80,7 @@ Template Name: Главная
 			<h2><?php echo get_cat_name($id);?></h2>
 			<?php while($recent->have_posts()) : $recent->the_post();?>
 				
-					<div class="col-lg-3 gallary">
+					<div class="col-md-3 gallary">
 						<a href="<?php the_permalink() ?>" rel="bookmark"></a>
 						<h3 class="GalleryTitle"><?php the_title(); ?></h3>
 						<a class="image-popup-vertical-fit GalleryImg" href="<?php
@@ -120,11 +120,11 @@ Template Name: Главная
 			<?php $idObj = get_category_by_slug('news'); $id = $idObj->term_id;
 			$n=4;   // количество выводимых записей
 			$recent = new WP_Query("cat=$id&showposts=$n");?>
-			<div class="col-lg-12">
+			<div class="col-md-12">
 				<h2><?php echo get_cat_name($id);?></h2>
 			</div>
 			<?php while($recent->have_posts()) : $recent->the_post();?>
-			<div class="col-lg-3">
+			<div class="col-md-3">
 				<div class="news">
 					<h3 class="newsTitle"><?php the_title(); ?></h3>
 					<div class="newsThumb"><?php the_post_thumbnail(); ?></div>

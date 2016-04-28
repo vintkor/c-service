@@ -13,7 +13,7 @@ Template Name: новости
 	<div class="row">
 		<div class="container description">
 			<div class="">
-				<div class="col-lg-12">
+				<div class="col-md-12">
 					<?php if (have_posts()): while (have_posts()): the_post(); ?>
 					<?php the_content(); ?>
 					<?php endwhile; endif; ?></div>

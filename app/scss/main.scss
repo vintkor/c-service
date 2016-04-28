@@ -113,10 +113,7 @@ h1 {
 	margin-top: -10px;
 }
 
-.phone p {
-	font-size: $font-size;
-	text-align: right;
-}
+
 
 .call-me .textwidget {
 	font-size: $font-size;
@@ -328,6 +325,7 @@ h1 {
 	a {
 		color: $white;
 		transition: all ease-in-out .2s;
+		text-decoration: underline;
 
 		&:hover {
 			color: darken($yellow, 20%) !important;
@@ -372,9 +370,6 @@ h1 {
 	padding: 30px;
 }
 
-.more-link {
-		display: none;
-	}
 
 .cat-news {
 	padding: 10px 0;
@@ -592,4 +587,67 @@ blockquote {
 		submit {
 			background: #d22
 		}
+}
+
+
+.more-link {
+		display: none !important;
+	}
+
+.phone p {
+	font-size: $font-size;
+	text-align: right;
+	@include font(300);	
+}
+
+// Пагинация 
+
+.wp-pagenavi {
+	margin-top: 10px;
+	margin-bottom: 20px;
+
+	.current {
+		background: $yellow;
+		color: $black;
+		border: 0;
+		padding: 5px 10px;
+		@include font(700);	
+		font-size: $font-size + 2px;
+		border-bottom: 2px solid $black !important;	
+		@include border-radius(8px);
+	}
+
+	.pages {
+		border: 0 !important;
+		border-bottom: 1px solid $black;
+		@include font(400);
+		font-size: $font-size + 2px;
+	}
+
+	a {
+		color: $black;
+		padding: 5px 10px !important;
+		@include border-radius(8px);
+		border: 0 !important;		
+		@include font(400);	
+		font-size: $font-size + 2px;
+
+		&:hover {		
+			text-decoration: none;
+			border-bottom: 2px solid $black !important;	
+			color: $black !important;
+		}
+	}
+}
+
+.footer-left .menu,
+.footer-center .menu {
+	padding-left: 0px !important;
+}
+
+.footer-right,
+.footer-right p {
+	color: $white;
+	@include font(300);
+	font-size: $font-size;
 }

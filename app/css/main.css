@@ -120,11 +120,6 @@ h1 {
   margin-top: -10px;
 }
 
-.phone p {
-  font-size: 16px;
-  text-align: right;
-}
-
 .call-me .textwidget {
   font-size: 16px;
   background: #F1C67D;
@@ -337,6 +332,7 @@ h1 {
 .footer a {
   color: #fff;
   transition: all ease-in-out .2s;
+  text-decoration: underline;
 }
 
 .footer a:hover {
@@ -378,10 +374,6 @@ h1 {
 
 .single-post .news-wrapper, .single-post .page-wrapper {
   padding: 30px;
-}
-
-.more-link {
-  display: none;
 }
 
 .cat-news {
@@ -604,6 +596,71 @@ blockquote p {
 
 .form submit {
   background: #d22;
+}
+
+.more-link {
+  display: none !important;
+}
+
+.phone p {
+  font-size: 16px;
+  text-align: right;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+}
+
+.wp-pagenavi {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.wp-pagenavi .current {
+  background: #F1C67D;
+  color: #262626;
+  border: 0;
+  padding: 5px 10px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  border-bottom: 2px solid #262626 !important;
+  border-radius: 8px;
+}
+
+.wp-pagenavi .pages {
+  border: 0 !important;
+  border-bottom: 1px solid #262626;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.wp-pagenavi a {
+  color: #262626;
+  padding: 5px 10px !important;
+  border-radius: 8px;
+  border: 0 !important;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.wp-pagenavi a:hover {
+  text-decoration: none;
+  border-bottom: 2px solid #262626 !important;
+  color: #262626 !important;
+}
+
+.footer-left .menu,
+.footer-center .menu {
+  padding-left: 0px !important;
+}
+
+.footer-right,
+.footer-right p {
+  color: #fff;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=main.css.map */

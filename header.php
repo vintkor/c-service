@@ -31,10 +31,10 @@
 			</div>
 			<div class="col-md-8">
 				<div class="row header-right">
-					<div class="col-md-3 col-md-offset-6">
+					<div class="col-md-4 col-md-offset-4">
 						<a class="call-me" href="#"><?php dynamic_sidebar('callme'); ?></a>
 					</div>
-					<div class="col-md-3 phone">
+					<div class="col-md-4 phone">
 						<?php dynamic_sidebar('tel'); ?>
 					</div>
 				</div>
