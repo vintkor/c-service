@@ -5,6 +5,23 @@ Template Name: Главная
 ?>
 
 <?php get_header(); ?>
+
+<script>
+	function setEqualHeight(columns){var tallestcolumn = 0;columns.each(function(){
+		currentHeight = $(this).height();if(currentHeight > tallestcolumn){
+		tallestcolumn = currentHeight;}});columns.height(tallestcolumn);}
+
+		$(document).ready(function() {setEqualHeight($(".colums-height"));});
+		$(document).ready(function() {setEqualHeight($(".sec1Thumb"));});
+		$(document).ready(function() {setEqualHeight($(".sec1Title"));});
+
+		$(document).ready(function() {setEqualHeight($(".gallary"));});
+
+		$(document).ready(function() {setEqualHeight($(".newsTitle"));});
+		$(document).ready(function() {setEqualHeight($(".newsThumb"));});
+		$(document).ready(function() {setEqualHeight($(".newsContent"));});
+</script>
+
 <?php if ( have_posts() ) : query_posts('page_id=159'); while (have_posts()) : the_post(); ?>
 <center><h1><?php the_title();?></h1></center>
 </div>
@@ -126,20 +143,6 @@ Template Name: Главная
 	</div>
 <!-- END новости на главной -->
 
-<script>
-	function setEqualHeight(columns){var tallestcolumn = 0;columns.each(function(){
-		currentHeight = $(this).height();if(currentHeight > tallestcolumn){
-		tallestcolumn = currentHeight;}});columns.height(tallestcolumn);}
 
-		$(document).ready(function() {setEqualHeight($(".colums-height"));});
-		$(document).ready(function() {setEqualHeight($(".sec1Thumb"));});
-		$(document).ready(function() {setEqualHeight($(".sec1Title"));});
-
-		$(document).ready(function() {setEqualHeight($(".gallary"));});
-
-		$(document).ready(function() {setEqualHeight($(".newsTitle"));});
-		$(document).ready(function() {setEqualHeight($(".newsThumb"));});
-		$(document).ready(function() {setEqualHeight($(".newsContent"));});
-</script>
 
 <?php get_footer(); ?>
